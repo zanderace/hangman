@@ -1,7 +1,7 @@
 while True:
     guess = input("Guess a letter: ")
-    try:
-        len(guess) == 1 &  guess.isalpha()
+    if len(guess) == 1 &  guess.isalpha():
         break
-    except:
+        
+    else:
         print("Invalid letter. Please, enter a single alphabetic letter")
