@@ -9,9 +9,9 @@ The code for this project is written in python and makes use of the random modul
 
 Two functions are defined:
 
-### :zap: 1) check_guess(guess)
+### :zap: 1) check_guess(guess) :zap:
 This function checks if the guess is included within the randomly selected word for the game. Prior to doing so, the guess is converted to lower case. If the guess is corrected, a message to standard output indicates that it is so. Otherwise, a message to standard outputn indicates it is not. 
 
-### 2) ask_for_input()
+### :zap: 2) ask_for_input() :zap:
 This function asks the user to input a guess and checks that the guess is one letter only. If it isn't, it reverts back to asking the user for their guess. If the guess is acceptable, it is then passed to the check_guess function.
 
