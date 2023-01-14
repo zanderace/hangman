@@ -26,3 +26,8 @@ This function checks if the guess is included within the randomly selected word 
 ### :zap: 2) ask_for_input() :zap:
 This function asks the user to input a guess and checks that the guess is one letter only. If it isn't, it reverts back to asking the user for their guess. If the guess is acceptable, it is then passed to the check_guess function.
 
+### Playing the game
+
+A function called play_game(word_list) that takes a list of words as input is defined and used to play the game.
+
+Within the play_game function, the Hangman object class is called, and assigned to game. The function then checks that 1) there are player lives left and 2) the number of letters remaining is greater than zero. Assuming 1 is true and 2 is not, then the game is won
