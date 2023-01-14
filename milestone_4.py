@@ -11,18 +11,19 @@ class Hangman:
         self.list_of_guesses = []
 
     def check_guess(self, guess):
-        self.guess = guess.lower()
-        if self.guess in self.word:
+        guess = guess.lower()
+        if guess in self.word:
             print(f"Good guess! {guess} is in the word.")
 
     def ask_for_input(self):
+        
         while True:
             guess = input("Please guess a letter: ")
             if len(guess) != 1 or guess.isalpha()==False:
                 print("Invalid letter. Please enter a single alphabetic character")
 
             elif guess in self.list_of_guesses:
-                print("You already tried that letter!")
+                 print("You already tried that letter!")
 
             else:
                 self.check_guess(guess)
