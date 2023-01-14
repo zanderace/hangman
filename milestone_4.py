@@ -27,7 +27,7 @@ class Hangman:
 
             else:
                 self.check_guess(guess)
-                self.list_of_guesses.extend([guess])
+                break
                 
 
 #Hangman(['Apple']).ask_for_input()
