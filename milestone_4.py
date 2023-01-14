@@ -7,5 +7,5 @@ class Hangman:
         self.word_guessed = []
         self.num_letters = 0
         self.num_lives = 0
-        self.word_list = []
+        self.word_list = word_list
         self.list_of_guesses = []
