@@ -16,17 +16,15 @@ class Hangman:
             print(f"Good guess! {guess} is in the word.")
 
     def ask_for_input(self):
-
         while True:
             guess = input("Please enter a single alphabetic letter: ")
-            if len(guess) != 1 or guess.isalpha()==False:
+            if len(guess) != 1 or not guess.isalpha():
                 print("Invalid letter. Please, enter a single alphabetical character.")
-                
             elif guess in self.list_of_guesses:
-                print("You already tried that letter")
-
+                print("You already tried that letter!")                
             else:
                 self.check_guess(guess)
+                self.list_of_guesses.append(guess)
                 break
                 
 
