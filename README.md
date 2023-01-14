@@ -7,6 +7,17 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 The code for this project is written in python and makes use of the random module that is imported at the start. Initially a list of 5 fruits is stored in a variable (word_list). One of the words is picked at random, using the choice function (from random module), this will be the word the user has to guess.
 
+## Class defintion
+
+The Hangman class is defined with the following attributes:
+word - secret word picked at random from the input word list
+word_guessed - A list of letters of same length as word, initialized as underscores. This is then updated with correct guesses.
+num_letters - number of unique letters in the word
+num_lives - number of player lives. Default is 5
+word_list - list of words that the game picks from
+list_of_guesses - list of guessed letters
+
+
 Two functions are defined:
 
 ### :zap: 1) check_guess(guess) :zap:
