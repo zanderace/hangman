@@ -29,4 +29,4 @@ class Hangman:
                 break
                 
 
-Hangman(['Apple']).ask_for_input()
+#Hangman(['Apple']).ask_for_input()
